@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>htmlforms</title>
+</head>
+<body>
+    <center>
+        <h1>Html Forms</h1>
+            <form method="POST">
+                {% csrf_token %}
+                    <legend>Login Form</legend><br><br>
+                    <label for="un">UserName</label>
+                    <input type="text" name="un" id="un"><br><br>
+                    <label for="pw">Password</label>
+                    <input type="password" name="pw" id="un"><br><br>
+                    <input type="submit" value="Submit">
+            </form>
+    </center>
+</body>
+</html>
